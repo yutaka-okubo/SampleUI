@@ -33,7 +33,7 @@ class MainTabPresenter: MainTabPresentation {
     }
     
     func viewDidLoad() {
-        interactor.fetchData()
+        router.setTab()
     }
 }
 

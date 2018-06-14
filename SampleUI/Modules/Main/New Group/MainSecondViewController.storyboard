@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J20-NY-T2A">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Second View Controller-->
+        <scene sceneID="YlE-Su-wbt">
+            <objects>
+                <viewController storyboardIdentifier="MainSecondViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="J20-NY-T2A" customClass="MainSecondViewController" customModule="SampleUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tKN-9D-9hk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dx3-wS-dhT">
+                                <rect key="frame" x="60" y="307" width="255" height="53"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <state key="normal" title="Change Mode！"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dx3-wS-dhT" firstAttribute="centerX" secondItem="tKN-9D-9hk" secondAttribute="centerX" id="B0F-Nq-Hl5"/>
+                            <constraint firstItem="dx3-wS-dhT" firstAttribute="centerY" secondItem="tKN-9D-9hk" secondAttribute="centerY" id="Dg0-Js-g98"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ta9-EP-2q2"/>
+                    </view>
+                    <connections>
+                        <outlet property="changeModeOutlet" destination="dx3-wS-dhT" id="LdH-3f-B4c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PHS-G9-sIo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118" y="137"/>
+        </scene>
+    </scenes>
+</document>

@@ -11,20 +11,14 @@ import UIKit
 // Protcol that defines the view input methods
 protocol MainTabViewInterface: class {}
 
-class MainTabViewController: UIViewController {
+class MainTabViewController: UITabBarController {
 
     var presenter: MainTabPresentation!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Transition Success")
-        self.configView()
         presenter.viewDidLoad()
-    }
-    
-    private func configView() {
-        self.navigationItem.title = "MainTab"
-        self.navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
 

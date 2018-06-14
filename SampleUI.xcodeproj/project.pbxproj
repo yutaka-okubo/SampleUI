@@ -24,6 +24,21 @@
 		4DDD893420D213E600D0615B /* MainTabRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD892620D213E600D0615B /* MainTabRouter.swift */; };
 		4DDD893520D213E600D0615B /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD892820D213E600D0615B /* RootRouter.swift */; };
 		4DDD893620D213E600D0615B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDD892920D213E600D0615B /* LaunchScreen.storyboard */; };
+		4DDD893820D222B400D0615B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD893720D222B400D0615B /* RootViewController.swift */; };
+		4DDD893A20D2252E00D0615B /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD893920D2252E00D0615B /* LaunchViewController.swift */; };
+		4DDD894020D22EAE00D0615B /* MainFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD893F20D22EAE00D0615B /* MainFirstViewController.swift */; };
+		4DDD894220D22EF600D0615B /* MainSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD894120D22EF600D0615B /* MainSecondViewController.swift */; };
+		4DDD894520D22F4500D0615B /* MainFirstViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDD894420D22F4500D0615B /* MainFirstViewController.storyboard */; };
+		4DDD894720D22F5E00D0615B /* MainSecondViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDD894620D22F5E00D0615B /* MainSecondViewController.storyboard */; };
+		4DDD895B20D237B700D0615B /* SubSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD894A20D237B700D0615B /* SubSecondViewController.swift */; };
+		4DDD895C20D237B700D0615B /* SubSecondViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDD894B20D237B700D0615B /* SubSecondViewController.storyboard */; };
+		4DDD895D20D237B700D0615B /* SubTabPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD894E20D237B700D0615B /* SubTabPresenter.swift */; };
+		4DDD895E20D237B700D0615B /* SubTabViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDD895020D237B700D0615B /* SubTabViewController.storyboard */; };
+		4DDD895F20D237B700D0615B /* SubTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD895220D237B700D0615B /* SubTabViewController.swift */; };
+		4DDD896020D237B700D0615B /* SubTabInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD895420D237B700D0615B /* SubTabInteractor.swift */; };
+		4DDD896120D237B700D0615B /* SubTabRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD895620D237B700D0615B /* SubTabRouter.swift */; };
+		4DDD896220D237B700D0615B /* SubFirstViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDD895920D237B700D0615B /* SubFirstViewController.storyboard */; };
+		4DDD896320D237B700D0615B /* SubFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD895A20D237B700D0615B /* SubFirstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +62,21 @@
 		4DDD892620D213E600D0615B /* MainTabRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabRouter.swift; sourceTree = "<group>"; };
 		4DDD892820D213E600D0615B /* RootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		4DDD892A20D213E600D0615B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4DDD893720D222B400D0615B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		4DDD893920D2252E00D0615B /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		4DDD893F20D22EAE00D0615B /* MainFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFirstViewController.swift; sourceTree = "<group>"; };
+		4DDD894120D22EF600D0615B /* MainSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSecondViewController.swift; sourceTree = "<group>"; };
+		4DDD894420D22F4500D0615B /* MainFirstViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainFirstViewController.storyboard; sourceTree = "<group>"; };
+		4DDD894620D22F5E00D0615B /* MainSecondViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainSecondViewController.storyboard; sourceTree = "<group>"; };
+		4DDD894A20D237B700D0615B /* SubSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubSecondViewController.swift; sourceTree = "<group>"; };
+		4DDD894B20D237B700D0615B /* SubSecondViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SubSecondViewController.storyboard; sourceTree = "<group>"; };
+		4DDD894E20D237B700D0615B /* SubTabPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubTabPresenter.swift; sourceTree = "<group>"; };
+		4DDD895120D237B700D0615B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SubTabViewController.storyboard; sourceTree = "<group>"; };
+		4DDD895220D237B700D0615B /* SubTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubTabViewController.swift; sourceTree = "<group>"; };
+		4DDD895420D237B700D0615B /* SubTabInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubTabInteractor.swift; sourceTree = "<group>"; };
+		4DDD895620D237B700D0615B /* SubTabRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubTabRouter.swift; sourceTree = "<group>"; };
+		4DDD895920D237B700D0615B /* SubFirstViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SubFirstViewController.storyboard; sourceTree = "<group>"; };
+		4DDD895A20D237B700D0615B /* SubFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubFirstViewController.swift; sourceTree = "<group>"; };
 		538BE3E3960143B0A45728F5 /* Pods_SampleUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -122,7 +152,8 @@
 			children = (
 				4DDD892720D213E600D0615B /* RootRouter */,
 				4DDD891120D213E600D0615B /* Login */,
-				4DDD891C20D213E600D0615B /* MainTab */,
+				4DDD893C20D22E0100D0615B /* Main */,
+				4DDD894820D237B700D0615B /* Sub */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -245,8 +276,112 @@
 			children = (
 				4DDD892820D213E600D0615B /* RootRouter.swift */,
 				4DDD892920D213E600D0615B /* LaunchScreen.storyboard */,
+				4DDD893720D222B400D0615B /* RootViewController.swift */,
+				4DDD893920D2252E00D0615B /* LaunchViewController.swift */,
 			);
 			path = RootRouter;
+			sourceTree = "<group>";
+		};
+		4DDD893C20D22E0100D0615B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD891C20D213E600D0615B /* MainTab */,
+				4DDD893E20D22E5700D0615B /* MainFirst */,
+				4DDD894320D22F0A00D0615B /* MainSecond */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4DDD893E20D22E5700D0615B /* MainFirst */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD893F20D22EAE00D0615B /* MainFirstViewController.swift */,
+				4DDD894420D22F4500D0615B /* MainFirstViewController.storyboard */,
+			);
+			path = MainFirst;
+			sourceTree = "<group>";
+		};
+		4DDD894320D22F0A00D0615B /* MainSecond */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD894120D22EF600D0615B /* MainSecondViewController.swift */,
+				4DDD894620D22F5E00D0615B /* MainSecondViewController.storyboard */,
+			);
+			name = MainSecond;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		4DDD894820D237B700D0615B /* Sub */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD894C20D237B700D0615B /* SubTab */,
+				4DDD895820D237B700D0615B /* SubFirst */,
+				4DDD894920D237B700D0615B /* SubSecond */,
+			);
+			path = Sub;
+			sourceTree = "<group>";
+		};
+		4DDD894920D237B700D0615B /* SubSecond */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD894A20D237B700D0615B /* SubSecondViewController.swift */,
+				4DDD894B20D237B700D0615B /* SubSecondViewController.storyboard */,
+			);
+			name = SubSecond;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		4DDD894C20D237B700D0615B /* SubTab */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD894D20D237B700D0615B /* Presenter */,
+				4DDD894F20D237B700D0615B /* View */,
+				4DDD895320D237B700D0615B /* Interactor */,
+				4DDD895520D237B700D0615B /* Router */,
+			);
+			path = SubTab;
+			sourceTree = "<group>";
+		};
+		4DDD894D20D237B700D0615B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD894E20D237B700D0615B /* SubTabPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4DDD894F20D237B700D0615B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD895020D237B700D0615B /* SubTabViewController.storyboard */,
+				4DDD895220D237B700D0615B /* SubTabViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4DDD895320D237B700D0615B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD895420D237B700D0615B /* SubTabInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4DDD895520D237B700D0615B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD895620D237B700D0615B /* SubTabRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		4DDD895820D237B700D0615B /* SubFirst */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD895920D237B700D0615B /* SubFirstViewController.storyboard */,
+				4DDD895A20D237B700D0615B /* SubFirstViewController.swift */,
+			);
+			path = SubFirst;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,10 +446,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DDD894720D22F5E00D0615B /* MainSecondViewController.storyboard in Resources */,
 				4DDD892C20D213E600D0615B /* LoginViewController.storyboard in Resources */,
+				4DDD895C20D237B700D0615B /* SubSecondViewController.storyboard in Resources */,
+				4DDD896220D237B700D0615B /* SubFirstViewController.storyboard in Resources */,
 				4DDD893120D213E600D0615B /* MainTabViewController.storyboard in Resources */,
+				4DDD895E20D237B700D0615B /* SubTabViewController.storyboard in Resources */,
 				4DDD893620D213E600D0615B /* LaunchScreen.storyboard in Resources */,
 				4DDD88D420D20DA000D0615B /* Assets.xcassets in Resources */,
+				4DDD894520D22F4500D0615B /* MainFirstViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,18 +513,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DDD895F20D237B700D0615B /* SubTabViewController.swift in Sources */,
 				4DDD892D20D213E600D0615B /* LoginViewController.swift in Sources */,
 				4DDD892E20D213E600D0615B /* LoginInteractor.swift in Sources */,
 				4DDD893520D213E600D0615B /* RootRouter.swift in Sources */,
 				4DDD890020D2118C00D0615B /* NSObject+ClassName.swift in Sources */,
+				4DDD896020D237B700D0615B /* SubTabInteractor.swift in Sources */,
+				4DDD893820D222B400D0615B /* RootViewController.swift in Sources */,
+				4DDD894020D22EAE00D0615B /* MainFirstViewController.swift in Sources */,
+				4DDD893A20D2252E00D0615B /* LaunchViewController.swift in Sources */,
 				4DDD88CD20D20DA000D0615B /* AppDelegate.swift in Sources */,
 				4DDD893320D213E600D0615B /* MainTabInteractor.swift in Sources */,
+				4DDD894220D22EF600D0615B /* MainSecondViewController.swift in Sources */,
 				4DDD893220D213E600D0615B /* MainTabViewController.swift in Sources */,
+				4DDD895B20D237B700D0615B /* SubSecondViewController.swift in Sources */,
 				4DDD88FF20D2118C00D0615B /* UIViewController+Storyboard.swift in Sources */,
 				4DDD892F20D213E600D0615B /* LoginRouter.swift in Sources */,
 				4DDD892B20D213E600D0615B /* LoginPresenter.swift in Sources */,
+				4DDD896120D237B700D0615B /* SubTabRouter.swift in Sources */,
+				4DDD896320D237B700D0615B /* SubFirstViewController.swift in Sources */,
 				4DDD893020D213E600D0615B /* MainTabPresenter.swift in Sources */,
 				4DDD893420D213E600D0615B /* MainTabRouter.swift in Sources */,
+				4DDD895D20D237B700D0615B /* SubTabPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +563,14 @@
 				4DDD892A20D213E600D0615B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4DDD895020D237B700D0615B /* SubTabViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DDD895120D237B700D0615B /* Base */,
+			);
+			name = SubTabViewController.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

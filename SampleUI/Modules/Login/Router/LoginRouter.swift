@@ -35,7 +35,9 @@ class LoginRouter: LoginWireframe {
     }
     
     func presentDetails() {
+        let appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        let rootViewController: RootViewController = appDelegate.window!.rootViewController as! RootViewController
         let vc = MainTabRouter.assembleModule()
-        self.viewController?.navigationController?.pushViewController(vc, animated: true)
+        rootViewController.transit(to: vc)
     }
 }

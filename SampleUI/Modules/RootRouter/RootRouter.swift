@@ -20,8 +20,8 @@ public class RootRouter: RootWireframe {
     }
     
     public func showRootScreen() {
-        let initVC = LoginRouter.assembleModule()
-        window.rootViewController = initVC
+        let rootVC = RootViewController()
+        window.rootViewController = rootVC
         window.makeKeyAndVisible()
     }
 }

@@ -25,7 +25,6 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         print("Build Success")
         self.configView()
-        self.login()
         presenter.viewDidLoad()
     }
     

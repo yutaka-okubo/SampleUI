@@ -35,6 +35,7 @@ class LoginPresenter: LoginPresentation {
     
     func viewDidLoad() {
         interactor.fetchData()
+        view?.login()
     }
     
     func transition() {
