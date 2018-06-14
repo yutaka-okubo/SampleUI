@@ -30,8 +30,7 @@ class LoginRouter: LoginWireframe {
                                        router: router)
         view.presenter = presenter
         interactor.output = presenter
-        let navi = UINavigationController(rootViewController: view)
-        return navi
+        return view
     }
     
     func presentDetails() {

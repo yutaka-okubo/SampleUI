@@ -12,7 +12,6 @@ protocol MainTabWireframe: class {
     var viewController: UITabBarController? { get set }
     init(viewController: UITabBarController?)
     static func assembleModule() -> UITabBarController
-    func setTab()
 }
 
 class MainTabRouter: MainTabWireframe {
@@ -31,7 +30,7 @@ class MainTabRouter: MainTabWireframe {
         view.presenter = presenter
         interactor.output = presenter
 
-        let firstVc = MainFirstViewController.instantiate()
+        let firstVc = MainFirstRouter.assembleModule()
         firstVc.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
         let secondVc = MainSecondViewController.instantiate()
         secondVc.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 2)
@@ -40,13 +39,5 @@ class MainTabRouter: MainTabWireframe {
         
         return view
     }
-    
-    func setTab() {
-        let firstVc = MainFirstViewController.instantiate()
-        firstVc.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
-        let secondVc = MainSecondViewController.instantiate()
-        secondVc.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 2)
-        let viewControllers = [firstVc, secondVc]
-        self.viewController?.viewControllers = viewControllers
-    }
+
 }

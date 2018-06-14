@@ -24,13 +24,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Build Success")
-        self.configView()
         presenter.viewDidLoad()
-    }
-    
-    private func configView() {
-        self.navigationItem.title = "Login"
-        self.navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
 

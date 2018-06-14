@@ -32,9 +32,7 @@ class MainTabPresenter: MainTabPresentation {
         self.router = router
     }
     
-    func viewDidLoad() {
-        router.setTab()
-    }
+    func viewDidLoad() {}
 }
 
 // MARK:- InteractorOutput
