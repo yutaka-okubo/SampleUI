@@ -15,11 +15,14 @@ protocol MainFirstPresentation: class {
     init(view: MainFirstViewInterface?, interactor: MainFirstUsecase, router: MainFirstWireframe)
     
     func viewDidLoad()
+    func refreshTable()
     func transition()
 }
 
 // Protcol that defines the commands sent from Interactor to Presenter
-protocol MainFirstInteractorOutput: class {}
+protocol MainFirstInteractorOutput: class {
+    func carouselFetched(carousels: [Carousel])
+}
 
 // MARK:- Presentation
 class MainFirstPresenter: MainFirstPresentation {
@@ -35,7 +38,10 @@ class MainFirstPresenter: MainFirstPresentation {
     
     func viewDidLoad() {
         interactor.fetchData()
-        view?.setStackView()
+    }
+    
+    func refreshTable() {
+        interactor.fetchData()
     }
     
     func transition() {
@@ -44,4 +50,8 @@ class MainFirstPresenter: MainFirstPresentation {
 }
 
 // MARK:- InteractorOutput
-extension MainFirstPresenter: MainFirstInteractorOutput {}
+extension MainFirstPresenter: MainFirstInteractorOutput {
+    func carouselFetched(carousels: [Carousel]) {
+        self.view?.showCarouselData(carousels: carousels)
+    }
+}

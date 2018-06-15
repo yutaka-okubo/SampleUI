@@ -20,6 +20,7 @@ class MainFirstInteractor: MainFirstUsecase {
     weak var output: MainFirstInteractorOutput!
     
     func fetchData() {
-        print("fetch data")
+        let carousels = Carousel().dummyData()
+        output.carouselFetched(carousels: carousels)
     }
 }
