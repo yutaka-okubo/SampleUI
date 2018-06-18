@@ -12,7 +12,7 @@ protocol MainFirstWireframe: class {
     var viewController: UIViewController? { get set }
     init(viewController: UIViewController?)
     static func assembleModule() -> UIViewController
-    func presentDetails()
+    func presentDetails(article: Article, indexPath: IndexPath)
 }
 
 class MainFirstRouter: MainFirstWireframe {
@@ -34,6 +34,9 @@ class MainFirstRouter: MainFirstWireframe {
         return navi
     }
     
-    func presentDetails() {
+    func presentDetails(article: Article, indexPath: IndexPath) {
+        let vc = ArticleDetailRouter.assembleModule(article: article)
+        vc.indexPath = indexPath
+        self.viewController?.navigationController?.pushViewController(vc, animated: true)
     }
 }

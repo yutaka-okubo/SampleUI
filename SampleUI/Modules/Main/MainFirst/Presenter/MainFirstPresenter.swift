@@ -16,7 +16,7 @@ protocol MainFirstPresentation: class {
     
     func viewDidLoad()
     func refreshTable()
-    func transition()
+    func transition(article: Article, indexPath: IndexPath)
 }
 
 // Protcol that defines the commands sent from Interactor to Presenter
@@ -44,8 +44,8 @@ class MainFirstPresenter: MainFirstPresentation {
         interactor.fetchData()
     }
     
-    func transition() {
-        router.presentDetails()
+    func transition(article: Article, indexPath: IndexPath) {
+        router.presentDetails(article: article, indexPath: indexPath)
     }
 }
 

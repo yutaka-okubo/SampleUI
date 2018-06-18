@@ -44,6 +44,12 @@
 		4DDD896D20D2502400D0615B /* MainFirstPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD896C20D2502400D0615B /* MainFirstPresenter.swift */; };
 		4DDD897420D39CA600D0615B /* SerchArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD897320D39CA600D0615B /* SerchArticle.swift */; };
 		4DDD897620D3AEF600D0615B /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD897520D3AEF600D0615B /* ArticleTableViewCell.swift */; };
+		4DDD897A20D74CD300D0615B /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD897920D74CD300D0615B /* ArticleDetailViewController.swift */; };
+		4DDD897C20D74CF500D0615B /* ArticleDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDD897B20D74CF500D0615B /* ArticleDetailViewController.storyboard */; };
+		4DDD897F20D74DA800D0615B /* ArticleDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD897E20D74DA800D0615B /* ArticleDetailPresenter.swift */; };
+		4DDD898220D74E2700D0615B /* ArticleDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD898120D74E2700D0615B /* ArticleDetailInteractor.swift */; };
+		4DDD898720D74EC000D0615B /* ArticleDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD898620D74EC000D0615B /* ArticleDetailRouter.swift */; };
+		4DDD898A20D7613200D0615B /* CustomAnimationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD898920D7613200D0615B /* CustomAnimationTransition.swift */; };
 		C87279DF20D6A8E400AAECC1 /* ArticleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87279DE20D6A8E400AAECC1 /* ArticleCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +94,12 @@
 		4DDD896C20D2502400D0615B /* MainFirstPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFirstPresenter.swift; sourceTree = "<group>"; };
 		4DDD897320D39CA600D0615B /* SerchArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerchArticle.swift; sourceTree = "<group>"; };
 		4DDD897520D3AEF600D0615B /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		4DDD897920D74CD300D0615B /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
+		4DDD897B20D74CF500D0615B /* ArticleDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArticleDetailViewController.storyboard; sourceTree = "<group>"; };
+		4DDD897E20D74DA800D0615B /* ArticleDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailPresenter.swift; sourceTree = "<group>"; };
+		4DDD898120D74E2700D0615B /* ArticleDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailInteractor.swift; sourceTree = "<group>"; };
+		4DDD898620D74EC000D0615B /* ArticleDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailRouter.swift; sourceTree = "<group>"; };
+		4DDD898920D7613200D0615B /* CustomAnimationTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationTransition.swift; sourceTree = "<group>"; };
 		538BE3E3960143B0A45728F5 /* Pods_SampleUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C87279DE20D6A8E400AAECC1 /* ArticleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,6 +193,7 @@
 		4DDD88FB20D2116B00D0615B /* Utill */ = {
 			isa = PBXGroup;
 			children = (
+				4DDD898820D7611200D0615B /* Animations */,
 				4DDD88FC20D2117A00D0615B /* Extensions */,
 			);
 			path = Utill;
@@ -297,6 +310,7 @@
 		4DDD893C20D22E0100D0615B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				4DDD897720D74B9400D0615B /* ArticleDetail */,
 				4DDD891C20D213E600D0615B /* MainTab */,
 				4DDD893E20D22E5700D0615B /* MainFirst */,
 				4DDD894320D22F0A00D0615B /* MainSecond */,
@@ -442,6 +456,58 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		4DDD897720D74B9400D0615B /* ArticleDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD898520D74E8400D0615B /* Router */,
+				4DDD898020D74DE800D0615B /* Interactor */,
+				4DDD897D20D74D8400D0615B /* Presenter */,
+				4DDD897820D74BC700D0615B /* View */,
+			);
+			path = ArticleDetail;
+			sourceTree = "<group>";
+		};
+		4DDD897820D74BC700D0615B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD897920D74CD300D0615B /* ArticleDetailViewController.swift */,
+				4DDD897B20D74CF500D0615B /* ArticleDetailViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4DDD897D20D74D8400D0615B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD897E20D74DA800D0615B /* ArticleDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4DDD898020D74DE800D0615B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD898120D74E2700D0615B /* ArticleDetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4DDD898520D74E8400D0615B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD898620D74EC000D0615B /* ArticleDetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		4DDD898820D7611200D0615B /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD898920D7613200D0615B /* CustomAnimationTransition.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -505,6 +571,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DDD894720D22F5E00D0615B /* MainSecondViewController.storyboard in Resources */,
+				4DDD897C20D74CF500D0615B /* ArticleDetailViewController.storyboard in Resources */,
 				4DDD892C20D213E600D0615B /* LoginViewController.storyboard in Resources */,
 				4DDD895C20D237B700D0615B /* SubSecondViewController.storyboard in Resources */,
 				4DDD896220D237B700D0615B /* SubFirstViewController.storyboard in Resources */,
@@ -572,6 +639,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DDD895F20D237B700D0615B /* SubTabViewController.swift in Sources */,
+				4DDD898220D74E2700D0615B /* ArticleDetailInteractor.swift in Sources */,
 				4DDD897620D3AEF600D0615B /* ArticleTableViewCell.swift in Sources */,
 				4DDD892D20D213E600D0615B /* LoginViewController.swift in Sources */,
 				4DDD892E20D213E600D0615B /* LoginInteractor.swift in Sources */,
@@ -582,6 +650,7 @@
 				4DDD896020D237B700D0615B /* SubTabInteractor.swift in Sources */,
 				4DDD893820D222B400D0615B /* RootViewController.swift in Sources */,
 				4DDD894020D22EAE00D0615B /* MainFirstViewController.swift in Sources */,
+				4DDD898720D74EC000D0615B /* ArticleDetailRouter.swift in Sources */,
 				4DDD893A20D2252E00D0615B /* LaunchViewController.swift in Sources */,
 				4DDD896920D24F8200D0615B /* MainFirstRouter.swift in Sources */,
 				C87279DF20D6A8E400AAECC1 /* ArticleCollectionViewCell.swift in Sources */,
@@ -594,8 +663,11 @@
 				4DDD892F20D213E600D0615B /* LoginRouter.swift in Sources */,
 				4DDD892B20D213E600D0615B /* LoginPresenter.swift in Sources */,
 				4DDD896120D237B700D0615B /* SubTabRouter.swift in Sources */,
+				4DDD897A20D74CD300D0615B /* ArticleDetailViewController.swift in Sources */,
 				4DDD896320D237B700D0615B /* SubFirstViewController.swift in Sources */,
 				4DDD896B20D24FD500D0615B /* MainFirstInteractor.swift in Sources */,
+				4DDD898A20D7613200D0615B /* CustomAnimationTransition.swift in Sources */,
+				4DDD897F20D74DA800D0615B /* ArticleDetailPresenter.swift in Sources */,
 				4DDD893020D213E600D0615B /* MainTabPresenter.swift in Sources */,
 				4DDD893420D213E600D0615B /* MainTabRouter.swift in Sources */,
 				4DDD895D20D237B700D0615B /* SubTabPresenter.swift in Sources */,
@@ -753,7 +825,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = YL6B9LU346;
 				INFOPLIST_FILE = SampleUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marcy.SampleUI;
@@ -769,7 +841,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = YL6B9LU346;
 				INFOPLIST_FILE = SampleUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marcy.SampleUI;

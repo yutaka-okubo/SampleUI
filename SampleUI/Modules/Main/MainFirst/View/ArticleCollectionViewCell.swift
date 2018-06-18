@@ -11,7 +11,7 @@ import UIKit
 class ArticleCollectionViewCell: UICollectionViewCell {
     static var indentifier: String { return String(describing: self) }
 
-    @IBOutlet private weak var imageView: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet private weak var nameOutlet: UILabel!
     @IBOutlet private weak var priceOutlet: UILabel!
     
